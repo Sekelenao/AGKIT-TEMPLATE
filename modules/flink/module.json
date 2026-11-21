@@ -1,0 +1,5 @@
+{
+  "display_name": "Apache Flink",
+  "description": "Apache Flink streaming rules and operator checklist",
+  "extends": ["java-base"]
+}
