@@ -1,0 +1,3 @@
+{
+  "description": "Enforce low-allocation, GC-friendly Java coding practices on Apache Flink per-record hot paths. Use when writing or reviewing Flink operators, functions, or custom serializers."
+}
