@@ -1,0 +1,3 @@
+{
+  "description": "Enforce Flinkboot test assertions for Flink POJO compliance, operator serializability, and CollectingSink usage. Use when writing or reviewing tests for Flinkboot jobs, POJOs, operators, or pipelines."
+}
