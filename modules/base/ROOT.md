@@ -3,6 +3,7 @@
 ## General Principles
 
 - Prefer small, cohesive, well-tested changes over sweeping rewrites.
-- Keep public interfaces explicit, typed, and validate all external inputs at I/O boundaries.
+- Keep public interfaces strictly typed and validate all external inputs at I/O boundaries.
 - Never commit secrets, tokens, or environment-specific credentials.
 - Document breaking changes clearly in commit messages and pull requests.
+- Favor explicit domain errors over generic strings or silent fallbacks.
