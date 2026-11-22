@@ -1,14 +1,40 @@
-# AGKIT Template Repository
+# AGKIT Templates
 
-This repository contains composable, harness-agnostic AI templates under `modules/`.
+Personal repository of composable, harness-agnostic AI instructions, skills, and specialized agents managed with [`agkit`](https://github.com/Sekelenao).
 
-## Authoring Guide
+## Available Modules
 
-Run `agkit spec` to inspect the complete repository layout, JSON schemas, and validation rules.
+| Module | Contents | Purpose |
+| --- | --- | --- |
+| `ai-authoring` | Skills: `skill-authoring`, `agent-authoring` | Harness-agnostic principles for writing concise, non-narrowing AI skills and agents |
+| `java-base` | Skills: `java-nullability`, `java-classes-and-records`, `java-testing` | Core Java standards for null safety, immutability, records/classes, and JUnit 5 testing |
+| `java-flink` | Skills: `flink-hot-path`, `flink-pojo` | Production Apache Flink Java practices for low-allocation hot paths and zero-Kryo POJOs |
+| `flinkboot` | `ROOT.md`, Skills: `flinkboot-configuration`, `flinkboot-testing` | Declarative YAML configuration, fail-fast validation, and `flinkboot-test` assertions |
+| `typescript-base` | Skills: `ts-type-safety`, `ts-oop`, `ts-error-handling`, `ts-testing` | Core TypeScript standards for strict typing, OOP design, typed errors, and testing |
+| `agent-swarm` | Agents: `refiner`, `orchestrator`, `implementer`, `prod-auditor`, `test-auditor` | Stack-agnostic multi-agent workflow from refinement to parallel implementation and independent audits |
 
 ## Usage
 
+Configure this repository once:
+
 ```bash
-agkit config --repo <this-repo-url>
-agkit init -m ai-authoring --harness opencode
+agkit config --repo https://github.com/Sekelenao/AGKIT-TEMPLATE.git
+agkit list
 ```
+
+Initialize any combination of modules in a target project:
+
+```bash
+# Java + Apache Flink + Flinkboot + Agent Swarm
+agkit init -m java-base java-flink flinkboot agent-swarm --harness claude
+
+# TypeScript + Agent Swarm
+agkit init -m typescript-base agent-swarm --harness opencode
+
+# Sync later with upstream updates
+agkit sync
+```
+
+## Authoring
+
+Run `agkit spec` to inspect the full repository layout, JSON schemas, and validation invariants before adding or updating modules under `modules/`.
