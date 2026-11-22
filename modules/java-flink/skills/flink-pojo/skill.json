@@ -1,0 +1,3 @@
+{
+  "description": "Design Apache Flink POJO models as pure zero-Kryo data structs for stream events and state. Use when creating, modifying, or reviewing Flink event models or state value classes."
+}
