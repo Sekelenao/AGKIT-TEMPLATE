@@ -32,7 +32,7 @@ Organize the agent prompt around behavior rather than duplicated standards:
 
 - Do not copy lengthy coding guidelines, checklists, or domain specifications into an agent prompt.
 - Reference reusable skills for detailed standards so multiple agents and workflows share a single source of truth.
-- Avoid putting examples in agent prompts to prevent narrowing or anchoring the agent's judgment toward specific cases.
+- Avoid illustrative examples that narrow or anchor the agent's judgment toward specific cases; use minimal structural templates only when output format ambiguity is costly.
 
 ## Harness-Agnostic Portability
 

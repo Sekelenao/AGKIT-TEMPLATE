@@ -18,7 +18,7 @@ Follow these principles when creating, updating, or reviewing a reusable AI skil
 
 - Write direct, imperative rules instead of background essays or vague advice.
 - Lead with non-negotiable invariants, decision criteria, and concrete workflows.
-- Avoid putting examples in skill instructions to prevent narrowing or anchoring the AI's behavior toward specific cases.
+- Avoid illustrative examples that narrow or anchor the AI's behavior toward specific cases; use minimal structural templates only when format ambiguity is costly.
 - Avoid duplicating project-wide conventions that already live in root instructions; focus on domain- or task-specific guidance.
 - State expected edge-case behavior and failure handling explicitly when mistakes are costly.
 
