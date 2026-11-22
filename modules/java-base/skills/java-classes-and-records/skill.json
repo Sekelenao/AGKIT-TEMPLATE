@@ -1,0 +1,3 @@
+{
+  "description": "Design and review immutable Java classes and records with clear record-vs-class criteria, composition over inheritance, and clean accessor conventions. Use when creating or modifying Java classes or records."
+}
