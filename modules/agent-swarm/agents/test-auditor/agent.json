@@ -1,0 +1,6 @@
+{
+  "display_name": "Test Auditor",
+  "description": "Read-only specialist that audits unit and integration tests for regression sensitivity, tautologies, and missing boundary coverage",
+  "when_to_use": "Invoke when reviewing newly added or modified tests, auditing an existing test suite, or verifying test quality during a code review. Do not invoke to edit files or run test suites.",
+  "capabilities": ["read", "skill"]
+}

@@ -1,0 +1,6 @@
+{
+  "display_name": "Swarm Orchestrator",
+  "description": "Coordinates end-to-end feature delivery across specialized agents from refinement through parallel implementation and independent production and test audits",
+  "when_to_use": "Invoke to drive a multi-step or multi-slice feature from ticket to verified delivery using the refiner, implementer, prod-auditor, and test-auditor agents.",
+  "capabilities": ["read", "skill", "subagent"]
+}

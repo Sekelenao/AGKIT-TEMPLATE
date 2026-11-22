@@ -1,0 +1,6 @@
+{
+  "display_name": "Production Code Auditor",
+  "description": "Read-only specialist that audits production code diffs for skill compliance, correctness, production risks, and adherence to SRP and evolution boundaries",
+  "when_to_use": "Invoke to audit newly added or modified production code during a feature delivery or pull request review. Do not invoke to edit files or audit test files.",
+  "capabilities": ["read", "skill"]
+}

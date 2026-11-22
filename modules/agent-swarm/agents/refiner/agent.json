@@ -1,0 +1,6 @@
+{
+  "display_name": "Feature Refiner",
+  "description": "Read-only analyst and architect that refines feature requests, surfaces future evolution axes, defines SRP and adapter boundaries, and decomposes work into disjoint implementation slices",
+  "when_to_use": "Invoke at the start of a feature or ticket to explore the codebase, identify ambiguities and future evolution axes, formulate clarifying questions for the user, and produce a locked implementation plan with shared contracts and disjoint file ownership. Do not invoke to edit files.",
+  "capabilities": ["read", "skill"]
+}
