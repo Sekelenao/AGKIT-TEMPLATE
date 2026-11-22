@@ -1,5 +1,0 @@
-{
-  "display_name": "Java Base",
-  "description": "Shared Java conventions and JUnit testing skill",
-  "extends": ["base"]
-}
