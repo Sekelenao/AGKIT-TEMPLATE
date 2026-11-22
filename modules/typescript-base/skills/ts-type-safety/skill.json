@@ -1,0 +1,3 @@
+{
+  "description": "Enforce strict TypeScript type safety, runtime boundary validation, discriminated unions, and immutability. Use when writing or reviewing TypeScript types, functions, or boundary parsing code."
+}

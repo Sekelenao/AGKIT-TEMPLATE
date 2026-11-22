@@ -1,0 +1,3 @@
+{
+  "description": "Enforce explicit, typed TypeScript error handling with custom error classes, safe catch narrowing, and fail-fast boundary behavior. Use when writing or reviewing try/catch blocks, async flows, or error hierarchies in TypeScript."
+}
