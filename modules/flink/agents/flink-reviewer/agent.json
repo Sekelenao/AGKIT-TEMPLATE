@@ -1,0 +1,5 @@
+{
+  "display_name": "Flink Reviewer",
+  "description": "Example Apache Flink job review agent.",
+  "capabilities": ["read"]
+}

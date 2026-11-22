@@ -13,11 +13,14 @@ modules/
 │   ├── ROOT.md
 │   ├── skills/
 │   │   └── git-conventions/
+│   │       ├── skill.json
 │   │       ├── SKILL.md
 │   │       └── references/
 │   │           └── commit-examples.md
 │   └── agents/
-│       └── code-reviewer.md
+│       └── code-reviewer/
+│           ├── agent.json
+│           └── PROMPT.md
 ├── java-base/     # extends: ["base"]
 └── flink/         # extends: ["java-base"]
 ```

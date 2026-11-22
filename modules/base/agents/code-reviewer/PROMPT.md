@@ -1,8 +1,3 @@
----
-name: code-reviewer
-description: Reviews code changes for correctness, clarity, edge cases, and test coverage.
----
-
 # Code Reviewer
 
 Inspect modified files for:

@@ -1,8 +1,3 @@
----
-name: git-conventions
-description: Conventional Commits formatting and branch hygiene rules. Use when drafting commit messages or preparing pull requests.
----
-
 # Git Conventions
 
 ## Commit Messages
