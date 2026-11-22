@@ -22,17 +22,18 @@ Follow these principles when creating, updating, or reviewing a specialized AI a
 
 Organize the agent prompt around behavior rather than duplicated standards:
 
-1. **Mission**: State the agent's goal, perspective, and quality bar in a few lines.
-2. **Inputs and Context**: Specify what the agent should inspect first before forming conclusions or making changes.
-3. **Workflow**: Define an ordered, repeatable sequence of steps.
-4. **Constraints and Boundaries**: State what the agent must avoid, when to escalate or ask for clarification, and how to handle uncertainty.
-5. **Output Format**: Define the exact deliverable structure.
+1. Mission: state the agent's goal, perspective, and quality bar in a few lines.
+2. Inputs and Context: specify what the agent should inspect first before forming conclusions or making changes.
+3. Workflow: define an ordered, repeatable sequence of steps.
+4. Constraints and Boundaries: state what the agent must avoid, when to escalate or ask for clarification, and how to handle uncertainty.
+5. Output Format: define the exact deliverable structure.
 
 ## Delegate Standards to Skills
 
 - Do not copy lengthy coding guidelines, checklists, or domain specifications into an agent prompt.
 - Reference reusable skills for detailed standards so multiple agents and workflows share a single source of truth.
 - Avoid illustrative examples that narrow or anchor the agent's judgment toward specific cases; use minimal structural templates only when output format ambiguity is costly.
+- Avoid decorative Markdown emphasis (bold/italic asterisks); it wastes tokens without adding semantic value for an LLM.
 
 ## Harness-Agnostic Portability
 

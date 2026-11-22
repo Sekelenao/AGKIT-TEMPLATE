@@ -1,0 +1,3 @@
+{
+  "description": "Enforce Java null safety across public return values, Optionals, collections, and constructor argument validation. Use when writing or reviewing Java classes, records, methods, constructors, or getters."
+}

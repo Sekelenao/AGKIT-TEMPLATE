@@ -10,7 +10,7 @@ Follow these principles when creating, updating, or reviewing a reusable AI skil
 
 ## Trigger-Oriented Description
 
-- Write a concise description that answers two questions: **what** the skill covers and **when** the AI should activate it.
+- Write a concise description that answers two questions: what the skill covers and when the AI should activate it.
 - Include concrete task verbs, artifact types, or contexts that naturally appear in user requests.
 - Keep the description portable across AI harnesses without referencing tool-specific UI or commands.
 
@@ -19,6 +19,7 @@ Follow these principles when creating, updating, or reviewing a reusable AI skil
 - Write direct, imperative rules instead of background essays or vague advice.
 - Lead with non-negotiable invariants, decision criteria, and concrete workflows.
 - Avoid illustrative examples that narrow or anchor the AI's behavior toward specific cases; use minimal structural templates only when format ambiguity is costly.
+- Avoid decorative Markdown emphasis (bold/italic asterisks); it wastes tokens without adding semantic value for an LLM.
 - Avoid duplicating project-wide conventions that already live in root instructions; focus on domain- or task-specific guidance.
 - State expected edge-case behavior and failure handling explicitly when mistakes are costly.
 
