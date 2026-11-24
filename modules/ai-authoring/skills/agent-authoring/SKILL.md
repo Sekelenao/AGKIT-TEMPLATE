@@ -12,6 +12,7 @@ Follow these principles when creating, updating, or reviewing a specialized AI a
 
 - Summarize the agent's core responsibility concisely in its metadata.
 - Explicitly state when a user or orchestrator should invoke this agent—and when it should not be used—in a dedicated trigger field if supported, or directly within the description otherwise.
+- Declare the agent's execution mode (primary, subagent, or both) when the target format distinguishes standalone primary agents from delegated subagents.
 
 ## Least-Privilege Capabilities
 
@@ -31,7 +32,7 @@ Organize the agent prompt around behavior rather than duplicated standards:
 ## Delegate Standards to Skills
 
 - Do not copy lengthy coding guidelines, checklists, or domain specifications into an agent prompt.
-- Reference reusable skills for detailed standards so multiple agents and workflows share a single source of truth.
+- Reference reusable skills for detailed standards so multiple agents and workflows share a single source of truth, and declare explicit skill IDs in agent metadata when the agent depends on specific skills and the target format supports it.
 - Avoid illustrative examples that narrow or anchor the agent's judgment toward specific cases; use minimal structural templates only when output format ambiguity is costly.
 - Avoid decorative Markdown emphasis (bold/italic asterisks); it wastes tokens without adding semantic value for an LLM.
 
