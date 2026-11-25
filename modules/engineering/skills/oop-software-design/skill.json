@@ -1,0 +1,3 @@
+{
+  "description": "Apply pragmatic object-oriented software design with single responsibility, strict composition over class inheritance, Tell Don't Ask encapsulation, and composable business rule modeling. Use when designing, implementing, or refactoring domain models, services, validators, or class architectures."
+}
