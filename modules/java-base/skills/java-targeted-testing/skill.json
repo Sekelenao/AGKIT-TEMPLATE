@@ -1,0 +1,3 @@
+{
+  "description": "Run fast, surgical local Java builds and test executions with Maven or Gradle by targeting touched modules and test classes instead of running full repository suites on every iteration. Use when executing Java builds or tests locally."
+}

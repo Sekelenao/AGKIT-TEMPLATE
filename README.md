@@ -8,7 +8,7 @@ Personal repository of composable, harness-agnostic AI instructions, skills, and
 | --- | --- | --- |
 | `ai-authoring` | Skills: `skill-authoring`, `agent-authoring` | Harness-agnostic principles for writing concise, non-narrowing AI skills and agents |
 | `engineering` | `ROOT.md`, Skills: `oop-software-design`, `git-commits` | Stack-agnostic software engineering standards for OOP design, Conventional Commits, and clean workflows |
-| `java-base` | Skills: `java-nullability`, `java-classes-and-records`, `java-testing` | Core Java standards for null safety, immutability, records/classes, and JUnit 5 testing |
+| `java-base` | Skills: `java-nullability`, `java-classes-and-records`, `java-testing`, `java-targeted-testing` | Core Java standards for null safety, immutability, records/classes, JUnit 5 testing, and targeted test execution |
 | `java-flink` | Skills: `flink-hot-path`, `flink-pojo` | Production Apache Flink Java practices for low-allocation hot paths and zero-Kryo POJOs |
 | `java-flinkboot` | `ROOT.md`, Skills: `flinkboot-configuration`, `flinkboot-testing` | Declarative YAML configuration, fail-fast validation, and `flinkboot-test` assertions |
 | `java-springboot` | `ROOT.md`, Skills: `springboot-configuration`, `springboot-properties` | Production Spring Boot practices for native conventions, clean bootstrap/configuration classes, and type-safe validated properties |
