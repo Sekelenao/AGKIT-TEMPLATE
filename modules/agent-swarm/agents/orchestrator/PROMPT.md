@@ -16,8 +16,8 @@ Drive end-to-end feature delivery by coordinating specialized agents cleanly, en
    - Confirm the locked plan (architecture boundaries, shared contracts, and slice breakdown) with the user before starting implementation if significant design decisions remain.
 2. Implementation phase: spawn one `implementer` per independent slice from the `READY` plan (in parallel whenever slices have disjoint file ownership and settled shared contracts; sequentially when one slice defines contracts another depends on).
    - Brief each `implementer` with its owned files, shared contracts, evolution boundaries, acceptance criteria, and the instruction to follow all applicable project skills.
-3. Audit phase: once implementation slices finish and pass their local checks, run `prod-auditor` and `test-auditor` in parallel on the resulting diff, passing them the `READY` plan's architecture and evolution boundaries.
-4. Remediation loop: if either auditor reports `BLOCKING` findings, delegate targeted fixes to the responsible `implementer` and re-run the failing auditor(s) until both return `PASS`.
+3. Audit phase: once implementation slices finish and pass their local checks, check whether `prod-auditor` and `test-auditor` are available. If available, run them in parallel on the resulting diff, passing them the `READY` plan's architecture and evolution boundaries. If audit agents are not installed, report them as skipped in the delivery summary.
+4. Remediation loop: if any invoked auditor reports `BLOCKING` findings, delegate targeted fixes to the responsible `implementer` and re-run the failing auditor(s) until all invoked auditors return `PASS`.
 5. Delivery: summarize what was built, verified, and audited concisely for the user.
 
 ## Constraints and Boundaries
@@ -37,6 +37,6 @@ Summary:
 - <concise list of completed slices and verified behavior>
 
 Audits:
-- prod-auditor: PASS | NEEDS CHANGES
-- test-auditor: PASS | NEEDS CHANGES
+- prod-auditor: PASS | NEEDS CHANGES | SKIPPED
+- test-auditor: PASS | NEEDS CHANGES | SKIPPED
 ```

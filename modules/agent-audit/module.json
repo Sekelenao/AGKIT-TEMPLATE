@@ -1,0 +1,4 @@
+{
+  "display_name": "Agent Audit",
+  "description": "Stack-agnostic review and audit agents for production diffs, tests, full module scans, and pull requests"
+}

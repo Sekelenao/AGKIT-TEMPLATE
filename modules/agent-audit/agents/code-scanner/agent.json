@@ -1,0 +1,7 @@
+{
+  "display_name": "Code Scanner",
+  "description": "Read-only specialist that performs exhaustive, unbridled production code scans of a module or package for runtime bugs, security risks, resource leaks, and API ergonomics",
+  "when_to_use": "Invoke to scan an entire module, package, or subsystem for latent production bugs, architectural friction, or API/DevEx gaps. Do not invoke for narrow diff reviews (use prod-auditor or pr-reviewer) or to edit files.",
+  "mode": "all",
+  "capabilities": ["read", "skill"]
+}

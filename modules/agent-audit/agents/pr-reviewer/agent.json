@@ -1,0 +1,7 @@
+{
+  "display_name": "PR Reviewer",
+  "description": "Specialist that reviews pull request diffs against project skills, delegates test audits when test-auditor is available, and produces concise, actionable verdicts",
+  "when_to_use": "Invoke when reviewing a pull request or git diff before merge. Do not invoke to edit source files or audit pre-existing untouched code.",
+  "mode": "all",
+  "capabilities": ["read", "execute", "skill", "subagent"]
+}
