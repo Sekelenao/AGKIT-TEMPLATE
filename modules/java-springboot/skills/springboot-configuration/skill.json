@@ -1,0 +1,3 @@
+{
+  "description": "Enforce clean Spring Boot application bootstrap and isolated @Configuration classes so test slices stay fast and mock-free. Use when creating or modifying the main application class, @Configuration classes, @Enable* annotations, or @Bean definitions."
+}

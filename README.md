@@ -9,7 +9,8 @@ Personal repository of composable, harness-agnostic AI instructions, skills, and
 | `ai-authoring` | Skills: `skill-authoring`, `agent-authoring` | Harness-agnostic principles for writing concise, non-narrowing AI skills and agents |
 | `java-base` | Skills: `java-nullability`, `java-classes-and-records`, `java-testing` | Core Java standards for null safety, immutability, records/classes, and JUnit 5 testing |
 | `java-flink` | Skills: `flink-hot-path`, `flink-pojo` | Production Apache Flink Java practices for low-allocation hot paths and zero-Kryo POJOs |
-| `flinkboot` | `ROOT.md`, Skills: `flinkboot-configuration`, `flinkboot-testing` | Declarative YAML configuration, fail-fast validation, and `flinkboot-test` assertions |
+| `java-flinkboot` | `ROOT.md`, Skills: `flinkboot-configuration`, `flinkboot-testing` | Declarative YAML configuration, fail-fast validation, and `flinkboot-test` assertions |
+| `java-springboot` | `ROOT.md`, Skills: `springboot-configuration`, `springboot-properties` | Production Spring Boot practices for native conventions, clean bootstrap/configuration classes, and type-safe validated properties |
 | `typescript-base` | Skills: `ts-type-safety`, `ts-oop`, `ts-error-handling`, `ts-testing` | Core TypeScript standards for strict typing, OOP design, typed errors, and testing |
 | `agent-swarm` | Agents: `refiner`, `orchestrator`, `implementer`, `prod-auditor`, `test-auditor` | Stack-agnostic multi-agent workflow from refinement to parallel implementation and independent audits |
 
@@ -26,7 +27,7 @@ Initialize any combination of modules in a target project:
 
 ```bash
 # Java + Apache Flink + Flinkboot + Agent Swarm
-agkit init -m java-base java-flink flinkboot agent-swarm --harness claude
+agkit init -m java-base java-flink java-flinkboot agent-swarm --harness claude
 
 # TypeScript + Agent Swarm
 agkit init -m typescript-base agent-swarm --harness opencode

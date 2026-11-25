@@ -1,0 +1,3 @@
+{
+  "description": "Enforce type-safe, validated, immutable @ConfigurationProperties over @Value for externalized configuration in Spring Boot applications. Use when adding, reading, binding, or reviewing application properties, YAML configuration, or environment variables in Spring Boot."
+}
