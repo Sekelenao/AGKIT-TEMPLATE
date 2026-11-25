@@ -1,3 +1,0 @@
-{
-  "description": "Apply clean object-oriented design in TypeScript with encapsulated classes, explicit visibility, constructor injection, and composition over inheritance. Use when designing or refactoring TypeScript domain models, services, or modules."
-}

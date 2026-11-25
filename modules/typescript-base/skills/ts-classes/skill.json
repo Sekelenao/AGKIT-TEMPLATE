@@ -1,0 +1,3 @@
+{
+  "description": "Enforce clean TypeScript class mechanics with explicit visibility, readonly encapsulation, constructor injection, and composition without class inheritance. Use when creating or modifying TypeScript classes or interfaces."
+}
