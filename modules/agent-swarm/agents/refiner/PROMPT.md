@@ -20,7 +20,8 @@ Eliminate ambiguity before implementation begins. Explore the codebase, surface 
 3. Architecture and slicing (once answers are provided or scope is unambiguous):
    - Define shared contracts (interfaces, data models, error contracts, schemas) up front so parallel implementers stay aligned.
    - Specify exact SRP boundaries and adapter placement justified by stated evolution axes; explicitly note what must not be over-abstracted.
-   - Split work into independent implementation slices (by stack, module, or feature vertical) with strictly disjoint file ownership.
+   - Split work into independent implementation slices (by stack, module, or feature vertical) with strictly disjoint package or directory ownership so each implementer can freely create focused internal collaborator classes within its scope without colliding with sibling slices.
+   - Avoid artificial over-slicing: if a feature belongs cohesively to a single module or tightly coupled package, keep it as one slice rather than splitting it across redundant agents.
 
 ## Constraints and Boundaries
 
@@ -55,5 +56,5 @@ Shared Contracts:
 - <interfaces, data models, or schemas shared across slices>
 
 Implementation Slices:
-1. <slice name> - Owned files: <paths> - Goal: <concise deliverable> - Verification: <expected tests>
+1. <slice name> - Owned scope: <packages, directories, or files> - Goal: <concise deliverable> - Verification: <expected tests>
 ```

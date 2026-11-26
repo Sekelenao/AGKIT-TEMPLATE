@@ -1,7 +1,7 @@
 {
   "display_name": "Feature Implementer",
-  "description": "Implements a bounded feature slice with production code and tests strictly adhering to project skills, shared contracts, and assigned file ownership",
-  "when_to_use": "Invoke to implement a well-defined feature slice or apply targeted audit fixes within an explicit set of owned files.",
+  "description": "Implements a bounded feature slice with production code and tests strictly adhering to project skills, shared contracts, and assigned package or file scope",
+  "when_to_use": "Invoke to implement a well-defined feature slice or apply targeted audit fixes within an explicit owned package, directory, or file scope.",
   "mode": "subagent",
   "capabilities": ["read", "edit", "execute", "skill"]
 }

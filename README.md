@@ -13,7 +13,8 @@ Personal repository of composable, harness-agnostic AI instructions, skills, and
 | `java-flinkboot` | `ROOT.md`, Skills: `flinkboot-configuration`, `flinkboot-testing` | Declarative YAML configuration, fail-fast validation, and `flinkboot-test` assertions |
 | `java-springboot` | `ROOT.md`, Skills: `springboot-configuration`, `springboot-properties` | Production Spring Boot practices for native conventions, clean bootstrap/configuration classes, and type-safe validated properties |
 | `typescript-base` | Skills: `ts-type-safety`, `ts-classes`, `ts-error-handling`, `ts-testing` | Core TypeScript standards for strict typing, clean classes, typed errors, and testing |
-| `agent-swarm` | Agents: `refiner`, `orchestrator`, `implementer`, `prod-auditor`, `test-auditor`, `code-scanner`, `pr-reviewer` | Stack-agnostic multi-agent workflow for refinement, parallel implementation, code and test auditing, module scans, and PR reviews |
+| `agent-audit` | Agents: `prod-auditor`, `test-auditor`, `code-scanner`, `pr-reviewer` | Stack-agnostic review and audit agents for production diffs, tests, full module scans, and PR reviews |
+| `agent-swarm` | Agents: `refiner`, `orchestrator`, `implementer` | Stack-agnostic multi-agent workflow for multi-slice refinement and parallel implementation (pairs with `agent-audit`) |
 
 ## Usage
 
@@ -27,11 +28,11 @@ agkit list
 Initialize any combination of modules in a target project:
 
 ```bash
-# Java + Apache Flink + Flinkboot + Agent Swarm
-agkit init -m java-base java-flink java-flinkboot agent-swarm --harness claude
+# Java + Apache Flink + Flinkboot + Audit agents (solo workflow with on-demand audits)
+agkit init -m engineering java-base java-flink java-flinkboot agent-audit --harness claude
 
-# TypeScript + Agent Swarm
-agkit init -m typescript-base agent-swarm --harness opencode
+# TypeScript + Full Agent Swarm (multi-slice workflow + audits)
+agkit init -m engineering typescript-base agent-swarm agent-audit --harness opencode
 
 # Sync later with upstream updates
 agkit sync

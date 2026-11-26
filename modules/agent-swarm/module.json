@@ -1,4 +1,4 @@
 {
   "display_name": "Agent Swarm",
-  "description": "Stack-agnostic specialized agents for collaborative refinement, parallel implementation, code and test auditing, module scans, and PR reviews"
+  "description": "Stack-agnostic multi-agent workflow for feature refinement, orchestration, and parallel implementation (pairs with agent-audit)"
 }
